@@ -1,3 +1,3 @@
-import { hello } from "./hello";
+#! /usr/bin/env node
 
-hello();
+console.log("main");

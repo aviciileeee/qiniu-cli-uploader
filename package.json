@@ -1,9 +1,12 @@
 {
   "name": "qiniu-cli-uploader",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.4",
+  "description": "七牛云命令行上传工具",
   "main": "dist/index.js",
   "type": "module",
+  "bin": {
+    "fan-upload": "dist/upload.cjs"
+  },
   "scripts": {
     "build:types": "tsc",
     "build": "npm run build:types && rollup -c rollup.config.ts --configPlugin typescript"
@@ -20,6 +23,7 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
     "rollup": "^4.17.2",
+    "rollup-plugin-clear": "^2.0.7",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5"
   }
